@@ -1,5 +1,5 @@
 # inheritance
-Two part for hackaton Karma.
+Two part of hackaton Karma.
 
 ## How to use
 
