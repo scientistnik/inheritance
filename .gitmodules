@@ -1,0 +1,6 @@
+[submodule "contracts/openzeppelin-solidity"]
+	path = contracts/openzeppelin-solidity
+	url = git@github.com:OpenZeppelin/openzeppelin-solidity.git
+[submodule "contracts/zeppelin"]
+	path = contracts/zeppelin
+	url = git@github.com:OpenZeppelin/openzeppelin-solidity.git

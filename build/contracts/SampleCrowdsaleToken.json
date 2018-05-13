@@ -1,0 +1,2032 @@
+{
+  "contractName": "SampleCrowdsaleToken",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "mintingFinished",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "name",
+      "outputs": [
+        {
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_spender",
+          "type": "address"
+        },
+        {
+          "name": "_value",
+          "type": "uint256"
+        }
+      ],
+      "name": "approve",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "totalSupply",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_from",
+          "type": "address"
+        },
+        {
+          "name": "_to",
+          "type": "address"
+        },
+        {
+          "name": "_value",
+          "type": "uint256"
+        }
+      ],
+      "name": "transferFrom",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "decimals",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_to",
+          "type": "address"
+        },
+        {
+          "name": "_amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "mint",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_spender",
+          "type": "address"
+        },
+        {
+          "name": "_subtractedValue",
+          "type": "uint256"
+        }
+      ],
+      "name": "decreaseApproval",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_owner",
+          "type": "address"
+        }
+      ],
+      "name": "balanceOf",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "finishMinting",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "symbol",
+      "outputs": [
+        {
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_to",
+          "type": "address"
+        },
+        {
+          "name": "_value",
+          "type": "uint256"
+        }
+      ],
+      "name": "transfer",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_spender",
+          "type": "address"
+        },
+        {
+          "name": "_addedValue",
+          "type": "uint256"
+        }
+      ],
+      "name": "increaseApproval",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_owner",
+          "type": "address"
+        },
+        {
+          "name": "_spender",
+          "type": "address"
+        }
+      ],
+      "name": "allowance",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "Mint",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [],
+      "name": "MintFinished",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "previousOwner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipTransferred",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "owner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "spender",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "name": "Approval",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "name": "Transfer",
+      "type": "event"
+    }
+  ],
+  "bytecode": "0x60806040526000600360146101000a81548160ff02191690831515021790555033600360006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055506117f38061006f6000396000f3006080604052600436106100e6576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806305d2035b146100eb57806306fdde031461011a578063095ea7b3146101aa57806318160ddd1461020f57806323b872dd1461023a578063313ce567146102bf57806340c10f19146102f0578063661884631461035557806370a08231146103ba5780637d64bcb4146104115780638da5cb5b1461044057806395d89b4114610497578063a9059cbb14610527578063d73dd6231461058c578063dd62ed3e146105f1578063f2fde38b14610668575b600080fd5b3480156100f757600080fd5b506101006106ab565b604051808215151515815260200191505060405180910390f35b34801561012657600080fd5b5061012f6106be565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561016f578082015181840152602081019050610154565b50505050905090810190601f16801561019c5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b3480156101b657600080fd5b506101f5600480360381019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803590602001909291905050506106f7565b604051808215151515815260200191505060405180910390f35b34801561021b57600080fd5b506102246107e9565b6040518082815260200191505060405180910390f35b34801561024657600080fd5b506102a5600480360381019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803590602001909291905050506107f3565b604051808215151515815260200191505060405180910390f35b3480156102cb57600080fd5b506102d4610bad565b604051808260ff1660ff16815260200191505060405180910390f35b3480156102fc57600080fd5b5061033b600480360381019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919080359060200190929190505050610bb2565b604051808215151515815260200191505060405180910390f35b34801561036157600080fd5b506103a0600480360381019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919080359060200190929190505050610d98565b604051808215151515815260200191505060405180910390f35b3480156103c657600080fd5b506103fb600480360381019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050611029565b6040518082815260200191505060405180910390f35b34801561041d57600080fd5b50610426611071565b604051808215151515815260200191505060405180910390f35b34801561044c57600080fd5b50610455611139565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b3480156104a357600080fd5b506104ac61115f565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156104ec5780820151818401526020810190506104d1565b50505050905090810190601f1680156105195780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b34801561053357600080fd5b50610572600480360381019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919080359060200190929190505050611198565b604051808215151515815260200191505060405180910390f35b34801561059857600080fd5b506105d7600480360381019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803590602001909291905050506113b7565b604051808215151515815260200191505060405180910390f35b3480156105fd57600080fd5b50610652600480360381019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506115b3565b6040518082815260200191505060405180910390f35b34801561067457600080fd5b506106a9600480360381019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061163a565b005b600360149054906101000a900460ff1681565b6040805190810160405280601681526020017f53616d706c652043726f776473616c6520546f6b656e0000000000000000000081525081565b600081600260003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020819055508273ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff167f8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925846040518082815260200191505060405180910390a36001905092915050565b6000600154905090565b60008073ffffffffffffffffffffffffffffffffffffffff168373ffffffffffffffffffffffffffffffffffffffff161415151561083057600080fd5b6000808573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054821115151561087d57600080fd5b600260008573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054821115151561090857600080fd5b610959826000808773ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000205461179290919063ffffffff16565b6000808673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020819055506109ec826000808673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020546117ab90919063ffffffff16565b6000808573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002081905550610abd82600260008773ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000205461179290919063ffffffff16565b600260008673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020819055508273ffffffffffffffffffffffffffffffffffffffff168473ffffffffffffffffffffffffffffffffffffffff167fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef846040518082815260200191505060405180910390a3600190509392505050565b601281565b6000600360009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16141515610c1057600080fd5b600360149054906101000a900460ff16151515610c2c57600080fd5b610c41826001546117ab90919063ffffffff16565b600181905550610c98826000808673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020546117ab90919063ffffffff16565b6000808573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020819055508273ffffffffffffffffffffffffffffffffffffffff167f0f6798a560793a54c3bcfe86a93cde1e73087d944c0ea20544137d4121396885836040518082815260200191505060405180910390a28273ffffffffffffffffffffffffffffffffffffffff16600073ffffffffffffffffffffffffffffffffffffffff167fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef846040518082815260200191505060405180910390a36001905092915050565b600080600260003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054905080831115610ea9576000600260003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002081905550610f3d565b610ebc838261179290919063ffffffff16565b600260003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020819055505b8373ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff167f8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925600260003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008873ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020546040518082815260200191505060405180910390a3600191505092915050565b60008060008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020549050919050565b6000600360009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161415156110cf57600080fd5b600360149054906101000a900460ff161515156110eb57600080fd5b6001600360146101000a81548160ff0219169083151502179055507fae5184fba832cb2b1f702aca6117b8d265eaf03ad33eb133f19dde0f5920fa0860405160405180910390a16001905090565b600360009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6040805190810160405280600381526020017f534354000000000000000000000000000000000000000000000000000000000081525081565b60008073ffffffffffffffffffffffffffffffffffffffff168373ffffffffffffffffffffffffffffffffffffffff16141515156111d557600080fd5b6000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054821115151561122257600080fd5b611273826000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000205461179290919063ffffffff16565b6000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002081905550611306826000808673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020546117ab90919063ffffffff16565b6000808573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020819055508273ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff167fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef846040518082815260200191505060405180910390a36001905092915050565b600061144882600260003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020546117ab90919063ffffffff16565b600260003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020819055508273ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff167f8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925600260003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008773ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020546040518082815260200191505060405180910390a36001905092915050565b6000600260008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054905092915050565b600360009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561169657600080fd5b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff16141515156116d257600080fd5b8073ffffffffffffffffffffffffffffffffffffffff16600360009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a380600360006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555050565b60008282111515156117a057fe5b818303905092915050565b600081830190508281101515156117be57fe5b809050929150505600a165627a7a7230582025f39f15838bf9ecc3371e4c2657041baf10006029570715af57e9e6310dfec30029",
+  "deployedBytecode": "0x6080604052600436106100e6576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806305d2035b146100eb57806306fdde031461011a578063095ea7b3146101aa57806318160ddd1461020f57806323b872dd1461023a578063313ce567146102bf57806340c10f19146102f0578063661884631461035557806370a08231146103ba5780637d64bcb4146104115780638da5cb5b1461044057806395d89b4114610497578063a9059cbb14610527578063d73dd6231461058c578063dd62ed3e146105f1578063f2fde38b14610668575b600080fd5b3480156100f757600080fd5b506101006106ab565b604051808215151515815260200191505060405180910390f35b34801561012657600080fd5b5061012f6106be565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561016f578082015181840152602081019050610154565b50505050905090810190601f16801561019c5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b3480156101b657600080fd5b506101f5600480360381019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803590602001909291905050506106f7565b604051808215151515815260200191505060405180910390f35b34801561021b57600080fd5b506102246107e9565b6040518082815260200191505060405180910390f35b34801561024657600080fd5b506102a5600480360381019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803590602001909291905050506107f3565b604051808215151515815260200191505060405180910390f35b3480156102cb57600080fd5b506102d4610bad565b604051808260ff1660ff16815260200191505060405180910390f35b3480156102fc57600080fd5b5061033b600480360381019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919080359060200190929190505050610bb2565b604051808215151515815260200191505060405180910390f35b34801561036157600080fd5b506103a0600480360381019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919080359060200190929190505050610d98565b604051808215151515815260200191505060405180910390f35b3480156103c657600080fd5b506103fb600480360381019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050611029565b6040518082815260200191505060405180910390f35b34801561041d57600080fd5b50610426611071565b604051808215151515815260200191505060405180910390f35b34801561044c57600080fd5b50610455611139565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b3480156104a357600080fd5b506104ac61115f565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156104ec5780820151818401526020810190506104d1565b50505050905090810190601f1680156105195780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b34801561053357600080fd5b50610572600480360381019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919080359060200190929190505050611198565b604051808215151515815260200191505060405180910390f35b34801561059857600080fd5b506105d7600480360381019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803590602001909291905050506113b7565b604051808215151515815260200191505060405180910390f35b3480156105fd57600080fd5b50610652600480360381019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506115b3565b6040518082815260200191505060405180910390f35b34801561067457600080fd5b506106a9600480360381019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061163a565b005b600360149054906101000a900460ff1681565b6040805190810160405280601681526020017f53616d706c652043726f776473616c6520546f6b656e0000000000000000000081525081565b600081600260003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020819055508273ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff167f8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925846040518082815260200191505060405180910390a36001905092915050565b6000600154905090565b60008073ffffffffffffffffffffffffffffffffffffffff168373ffffffffffffffffffffffffffffffffffffffff161415151561083057600080fd5b6000808573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054821115151561087d57600080fd5b600260008573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054821115151561090857600080fd5b610959826000808773ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000205461179290919063ffffffff16565b6000808673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020819055506109ec826000808673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020546117ab90919063ffffffff16565b6000808573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002081905550610abd82600260008773ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000205461179290919063ffffffff16565b600260008673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020819055508273ffffffffffffffffffffffffffffffffffffffff168473ffffffffffffffffffffffffffffffffffffffff167fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef846040518082815260200191505060405180910390a3600190509392505050565b601281565b6000600360009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16141515610c1057600080fd5b600360149054906101000a900460ff16151515610c2c57600080fd5b610c41826001546117ab90919063ffffffff16565b600181905550610c98826000808673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020546117ab90919063ffffffff16565b6000808573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020819055508273ffffffffffffffffffffffffffffffffffffffff167f0f6798a560793a54c3bcfe86a93cde1e73087d944c0ea20544137d4121396885836040518082815260200191505060405180910390a28273ffffffffffffffffffffffffffffffffffffffff16600073ffffffffffffffffffffffffffffffffffffffff167fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef846040518082815260200191505060405180910390a36001905092915050565b600080600260003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054905080831115610ea9576000600260003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002081905550610f3d565b610ebc838261179290919063ffffffff16565b600260003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020819055505b8373ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff167f8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925600260003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008873ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020546040518082815260200191505060405180910390a3600191505092915050565b60008060008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020549050919050565b6000600360009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161415156110cf57600080fd5b600360149054906101000a900460ff161515156110eb57600080fd5b6001600360146101000a81548160ff0219169083151502179055507fae5184fba832cb2b1f702aca6117b8d265eaf03ad33eb133f19dde0f5920fa0860405160405180910390a16001905090565b600360009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6040805190810160405280600381526020017f534354000000000000000000000000000000000000000000000000000000000081525081565b60008073ffffffffffffffffffffffffffffffffffffffff168373ffffffffffffffffffffffffffffffffffffffff16141515156111d557600080fd5b6000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054821115151561122257600080fd5b611273826000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000205461179290919063ffffffff16565b6000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002081905550611306826000808673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020546117ab90919063ffffffff16565b6000808573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020819055508273ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff167fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef846040518082815260200191505060405180910390a36001905092915050565b600061144882600260003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020546117ab90919063ffffffff16565b600260003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020819055508273ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff167f8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925600260003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008773ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020546040518082815260200191505060405180910390a36001905092915050565b6000600260008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054905092915050565b600360009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561169657600080fd5b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff16141515156116d257600080fd5b8073ffffffffffffffffffffffffffffffffffffffff16600360009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a380600360006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555050565b60008282111515156117a057fe5b818303905092915050565b600081830190508281101515156117be57fe5b809050929150505600a165627a7a7230582025f39f15838bf9ecc3371e4c2657041baf10006029570715af57e9e6310dfec30029",
+  "sourceMap": "379:289:24:-;;;548:5:94;518:35;;;;;;;;;;;;;;;;;;;;509:10:81;501:5;;:18;;;;;;;;;;;;;;;;;;379:289:24;;;;;;",
+  "deployedSourceMap": "379:289:24:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;518:35:94;;8:9:-1;5:2;;;30:1;27;20:12;5:2;518:35:94;;;;;;;;;;;;;;;;;;;;;;;;;;;431:54:24;;8:9:-1;5:2;;;30:1;27;20:12;5:2;431:54:24;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;431:54:24;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1803:188:98;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1803:188:98;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;371:83:88;;8:9:-1;5:2;;;30:1;27;20:12;5:2;371:83:88;;;;;;;;;;;;;;;;;;;;;;;736:444:98;;8:9:-1;5:2;;;30:1;27;20:12;5:2;736:444:98;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;596:35:24;;8:9:-1;5:2;;;30:1;27;20:12;5:2;596:35:24;;;;;;;;;;;;;;;;;;;;;;;;;;;857:274:94;;8:9:-1;5:2;;;30:1;27;20:12;5:2;857:274:94;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;3617:403:98;;8:9:-1;5:2;;;30:1;27;20:12;5:2;3617:403:98;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1131:99:88;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1131:99:88;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1245:140:94;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1245:140:94;;;;;;;;;;;;;;;;;;;;;;;;;;;238:20:81;;8:9:-1;5:2;;;30:1;27;20:12;5:2;238:20:81;;;;;;;;;;;;;;;;;;;;;;;;;;;522:37:24;;8:9:-1;5:2;;;30:1;27;20:12;5:2;522:37:24;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;522:37:24;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;608:321:88;;8:9:-1;5:2;;;30:1;27;20:12;5:2;608:321:88;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2893:262:98;;8:9:-1;5:2;;;30:1;27;20:12;5:2;2893:262:98;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2310:126;;8:9:-1;5:2;;;30:1;27;20:12;5:2;2310:126:98;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;832:174:81;;8:9:-1;5:2;;;30:1;27;20:12;5:2;832:174:81;;;;;;;;;;;;;;;;;;;;;;;;;;;;518:35:94;;;;;;;;;;;;;:::o;431:54:24:-;;;;;;;;;;;;;;;;;;;;:::o;1803:188:98:-;1870:4;1914:6;1882:7;:19;1890:10;1882:19;;;;;;;;;;;;;;;:29;1902:8;1882:29;;;;;;;;;;;;;;;:38;;;;1952:8;1931:38;;1940:10;1931:38;;;1962:6;1931:38;;;;;;;;;;;;;;;;;;1982:4;1975:11;;1803:188;;;;:::o;371:83:88:-;415:7;437:12;;430:19;;371:83;:::o;736:444:98:-;818:4;853:1;838:17;;:3;:17;;;;830:26;;;;;;;;880:8;:15;889:5;880:15;;;;;;;;;;;;;;;;870:6;:25;;862:34;;;;;;;;920:7;:14;928:5;920:14;;;;;;;;;;;;;;;:26;935:10;920:26;;;;;;;;;;;;;;;;910:6;:36;;902:45;;;;;;;;972:27;992:6;972:8;:15;981:5;972:15;;;;;;;;;;;;;;;;:19;;:27;;;;:::i;:::-;954:8;:15;963:5;954:15;;;;;;;;;;;;;;;:45;;;;1021:25;1039:6;1021:8;:13;1030:3;1021:13;;;;;;;;;;;;;;;;:17;;:25;;;;:::i;:::-;1005:8;:13;1014:3;1005:13;;;;;;;;;;;;;;;:41;;;;1081:38;1112:6;1081:7;:14;1089:5;1081:14;;;;;;;;;;;;;;;:26;1096:10;1081:26;;;;;;;;;;;;;;;;:30;;:38;;;;:::i;:::-;1052:7;:14;1060:5;1052:14;;;;;;;;;;;;;;;:26;1067:10;1052:26;;;;;;;;;;;;;;;:67;;;;1146:3;1130:28;;1139:5;1130:28;;;1151:6;1130:28;;;;;;;;;;;;;;;;;;1171:4;1164:11;;736:444;;;;;:::o;596:35:24:-;629:2;596:35;:::o;857:274:94:-;935:4;653:5:81;;;;;;;;;;;639:19;;:10;:19;;;631:28;;;;;;;;593:15:94;;;;;;;;;;;592:16;584:25;;;;;;;;962;979:7;962:12;;:16;;:25;;;;:::i;:::-;947:12;:40;;;;1009:26;1027:7;1009:8;:13;1018:3;1009:13;;;;;;;;;;;;;;;;:17;;:26;;;;:::i;:::-;993:8;:13;1002:3;993:13;;;;;;;;;;;;;;;:42;;;;1051:3;1046:18;;;1056:7;1046:18;;;;;;;;;;;;;;;;;;1096:3;1075:34;;1092:1;1075:34;;;1101:7;1075:34;;;;;;;;;;;;;;;;;;1122:4;1115:11;;857:274;;;;:::o;3617:403:98:-;3700:4;3712:13;3728:7;:19;3736:10;3728:19;;;;;;;;;;;;;;;:29;3748:8;3728:29;;;;;;;;;;;;;;;;3712:45;;3786:8;3767:16;:27;3763:164;;;3836:1;3804:7;:19;3812:10;3804:19;;;;;;;;;;;;;;;:29;3824:8;3804:29;;;;;;;;;;;;;;;:33;;;;3763:164;;;3890:30;3903:16;3890:8;:12;;:30;;;;:::i;:::-;3858:7;:19;3866:10;3858:19;;;;;;;;;;;;;;;:29;3878:8;3858:29;;;;;;;;;;;;;;;:62;;;;3763:164;3958:8;3937:61;;3946:10;3937:61;;;3968:7;:19;3976:10;3968:19;;;;;;;;;;;;;;;:29;3988:8;3968:29;;;;;;;;;;;;;;;;3937:61;;;;;;;;;;;;;;;;;;4011:4;4004:11;;3617:403;;;;;:::o;1131:99:88:-;1187:7;1209:8;:16;1218:6;1209:16;;;;;;;;;;;;;;;;1202:23;;1131:99;;;:::o;1245:140:94:-;1304:4;653:5:81;;;;;;;;;;;639:19;;:10;:19;;;631:28;;;;;;;;593:15:94;;;;;;;;;;;592:16;584:25;;;;;;;;1334:4;1316:15;;:22;;;;;;;;;;;;;;;;;;1349:14;;;;;;;;;;1376:4;1369:11;;1245:140;:::o;238:20:81:-;;;;;;;;;;;;;:::o;522:37:24:-;;;;;;;;;;;;;;;;;;;;:::o;608:321:88:-;671:4;706:1;691:17;;:3;:17;;;;683:26;;;;;;;;733:8;:20;742:10;733:20;;;;;;;;;;;;;;;;723:6;:30;;715:39;;;;;;;;784:32;809:6;784:8;:20;793:10;784:20;;;;;;;;;;;;;;;;:24;;:32;;;;:::i;:::-;761:8;:20;770:10;761:20;;;;;;;;;;;;;;;:55;;;;838:25;856:6;838:8;:13;847:3;838:13;;;;;;;;;;;;;;;;:17;;:25;;;;:::i;:::-;822:8;:13;831:3;822:13;;;;;;;;;;;;;;;:41;;;;895:3;874:33;;883:10;874:33;;;900:6;874:33;;;;;;;;;;;;;;;;;;920:4;913:11;;608:321;;;;:::o;2893:262:98:-;2971:4;3015:46;3049:11;3015:7;:19;3023:10;3015:19;;;;;;;;;;;;;;;:29;3035:8;3015:29;;;;;;;;;;;;;;;;:33;;:46;;;;:::i;:::-;2983:7;:19;2991:10;2983:19;;;;;;;;;;;;;;;:29;3003:8;2983:29;;;;;;;;;;;;;;;:78;;;;3093:8;3072:61;;3081:10;3072:61;;;3103:7;:19;3111:10;3103:19;;;;;;;;;;;;;;;:29;3123:8;3103:29;;;;;;;;;;;;;;;;3072:61;;;;;;;;;;;;;;;;;;3146:4;3139:11;;2893:262;;;;:::o;2310:126::-;2384:7;2406;:15;2414:6;2406:15;;;;;;;;;;;;;;;:25;2422:8;2406:25;;;;;;;;;;;;;;;;2399:32;;2310:126;;;;:::o;832:174:81:-;653:5;;;;;;;;;;;639:19;;:10;:19;;;631:28;;;;;;;;928:1;908:22;;:8;:22;;;;900:31;;;;;;;;970:8;942:37;;963:5;;;;;;;;;;;942:37;;;;;;;;;;;;993:8;985:5;;:16;;;;;;;;;;;;;;;;;;832:174;:::o;836:110:31:-;894:7;921:1;916;:6;;909:14;;;;;;940:1;936;:5;929:12;;836:110;;;;:::o;1008:123::-;1066:9;1091:1;1087;:5;1083:9;;1110:1;1105;:6;;1098:14;;;;;;1125:1;1118:8;;1008:123;;;;:::o",
+  "source": "pragma solidity ^0.4.21;\n\nimport \"../crowdsale/validation/CappedCrowdsale.sol\";\nimport \"../crowdsale/distribution/RefundableCrowdsale.sol\";\nimport \"../crowdsale/emission/MintedCrowdsale.sol\";\nimport \"../token/ERC20/MintableToken.sol\";\n\n\n/**\n * @title SampleCrowdsaleToken\n * @dev Very simple ERC20 Token that can be minted.\n * It is meant to be used in a crowdsale contract.\n */\ncontract SampleCrowdsaleToken is MintableToken {\n\n  string public constant name = \"Sample Crowdsale Token\"; // solium-disable-line uppercase\n  string public constant symbol = \"SCT\"; // solium-disable-line uppercase\n  uint8 public constant decimals = 18; // solium-disable-line uppercase\n\n}\n\n\n/**\n * @title SampleCrowdsale\n * @dev This is an example of a fully fledged crowdsale.\n * The way to add new features to a base crowdsale is by multiple inheritance.\n * In this example we are providing following extensions:\n * CappedCrowdsale - sets a max boundary for raised funds\n * RefundableCrowdsale - set a min goal to be reached and returns funds if it's not met\n *\n * After adding multiple features it's good practice to run integration tests\n * to ensure that subcontracts works together as intended.\n */\ncontract SampleCrowdsale is CappedCrowdsale, RefundableCrowdsale, MintedCrowdsale {\n\n  function SampleCrowdsale(\n    uint256 _openingTime,\n    uint256 _closingTime,\n    uint256 _rate,\n    address _wallet,\n    uint256 _cap,\n    MintableToken _token,\n    uint256 _goal\n  )\n    public\n    Crowdsale(_rate, _wallet, _token)\n    CappedCrowdsale(_cap)\n    TimedCrowdsale(_openingTime, _closingTime)\n    RefundableCrowdsale(_goal)\n  {\n    //As goal needs to be met for a successful crowdsale\n    //the value needs to less or equal than a cap which is limit for accepted funds\n    require(_goal <= _cap);\n  }\n}\n",
+  "sourcePath": "/home/scientistnik/fastspace/karma/inheritance/contracts/zeppelin/contracts/examples/SampleCrowdsale.sol",
+  "ast": {
+    "absolutePath": "/home/scientistnik/fastspace/karma/inheritance/contracts/zeppelin/contracts/examples/SampleCrowdsale.sol",
+    "exportedSymbols": {
+      "SampleCrowdsale": [
+        2303
+      ],
+      "SampleCrowdsaleToken": [
+        2257
+      ]
+    },
+    "id": 2304,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 2241,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".21"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:24"
+      },
+      {
+        "absolutePath": "/home/scientistnik/fastspace/karma/inheritance/contracts/zeppelin/contracts/crowdsale/validation/CappedCrowdsale.sol",
+        "file": "../crowdsale/validation/CappedCrowdsale.sol",
+        "id": 2242,
+        "nodeType": "ImportDirective",
+        "scope": 2304,
+        "sourceUnit": 1905,
+        "src": "26:53:24",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/home/scientistnik/fastspace/karma/inheritance/contracts/zeppelin/contracts/crowdsale/distribution/RefundableCrowdsale.sol",
+        "file": "../crowdsale/distribution/RefundableCrowdsale.sol",
+        "id": 2243,
+        "nodeType": "ImportDirective",
+        "scope": 2304,
+        "sourceUnit": 1491,
+        "src": "80:59:24",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/home/scientistnik/fastspace/karma/inheritance/contracts/zeppelin/contracts/crowdsale/emission/MintedCrowdsale.sol",
+        "file": "../crowdsale/emission/MintedCrowdsale.sol",
+        "id": 2244,
+        "nodeType": "ImportDirective",
+        "scope": 2304,
+        "sourceUnit": 1744,
+        "src": "140:51:24",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/home/scientistnik/fastspace/karma/inheritance/contracts/zeppelin/contracts/token/ERC20/MintableToken.sol",
+        "file": "../token/ERC20/MintableToken.sol",
+        "id": 2245,
+        "nodeType": "ImportDirective",
+        "scope": 2304,
+        "sourceUnit": 6127,
+        "src": "192:42:24",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 2246,
+              "name": "MintableToken",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 6126,
+              "src": "412:13:24",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_MintableToken_$6126",
+                "typeString": "contract MintableToken"
+              }
+            },
+            "id": 2247,
+            "nodeType": "InheritanceSpecifier",
+            "src": "412:13:24"
+          }
+        ],
+        "contractDependencies": [
+          5020,
+          5798,
+          5999,
+          6031,
+          6126,
+          6586
+        ],
+        "contractKind": "contract",
+        "documentation": "@title SampleCrowdsaleToken\n@dev Very simple ERC20 Token that can be minted.\nIt is meant to be used in a crowdsale contract.",
+        "fullyImplemented": true,
+        "id": 2257,
+        "linearizedBaseContracts": [
+          2257,
+          6126,
+          5020,
+          6586,
+          5798,
+          5999,
+          6031
+        ],
+        "name": "SampleCrowdsaleToken",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": true,
+            "id": 2250,
+            "name": "name",
+            "nodeType": "VariableDeclaration",
+            "scope": 2257,
+            "src": "431:54:24",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_memory",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 2248,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "431:6:24",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "53616d706c652043726f776473616c6520546f6b656e",
+              "id": 2249,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "string",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "461:24:24",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_stringliteral_57a85b1937a20a5d495de875a4a7af46ff581ccf3f336ab6c1a136ea0b8088ca",
+                "typeString": "literal_string \"Sample Crowdsale Token\""
+              },
+              "value": "Sample Crowdsale Token"
+            },
+            "visibility": "public"
+          },
+          {
+            "constant": true,
+            "id": 2253,
+            "name": "symbol",
+            "nodeType": "VariableDeclaration",
+            "scope": 2257,
+            "src": "522:37:24",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_memory",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 2251,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "522:6:24",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "534354",
+              "id": 2252,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "string",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "554:5:24",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_stringliteral_b2b1dc3929a2664c613672dce30cd0d6fe6b6e782ad9ee21092964c70aaaffa9",
+                "typeString": "literal_string \"SCT\""
+              },
+              "value": "SCT"
+            },
+            "visibility": "public"
+          },
+          {
+            "constant": true,
+            "id": 2256,
+            "name": "decimals",
+            "nodeType": "VariableDeclaration",
+            "scope": 2257,
+            "src": "596:35:24",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint8",
+              "typeString": "uint8"
+            },
+            "typeName": {
+              "id": 2254,
+              "name": "uint8",
+              "nodeType": "ElementaryTypeName",
+              "src": "596:5:24",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint8",
+                "typeString": "uint8"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "3138",
+              "id": 2255,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "629:2:24",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_18_by_1",
+                "typeString": "int_const 18"
+              },
+              "value": "18"
+            },
+            "visibility": "public"
+          }
+        ],
+        "scope": 2304,
+        "src": "379:289:24"
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 2258,
+              "name": "CappedCrowdsale",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 1904,
+              "src": "1213:15:24",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_CappedCrowdsale_$1904",
+                "typeString": "contract CappedCrowdsale"
+              }
+            },
+            "id": 2259,
+            "nodeType": "InheritanceSpecifier",
+            "src": "1213:15:24"
+          },
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 2260,
+              "name": "RefundableCrowdsale",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 1490,
+              "src": "1230:19:24",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_RefundableCrowdsale_$1490",
+                "typeString": "contract RefundableCrowdsale"
+              }
+            },
+            "id": 2261,
+            "nodeType": "InheritanceSpecifier",
+            "src": "1230:19:24"
+          },
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 2262,
+              "name": "MintedCrowdsale",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 1743,
+              "src": "1251:15:24",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_MintedCrowdsale_$1743",
+                "typeString": "contract MintedCrowdsale"
+              }
+            },
+            "id": 2263,
+            "nodeType": "InheritanceSpecifier",
+            "src": "1251:15:24"
+          }
+        ],
+        "contractDependencies": [
+          1264,
+          1312,
+          1490,
+          1743,
+          1904,
+          2138,
+          5020
+        ],
+        "contractKind": "contract",
+        "documentation": "@title SampleCrowdsale\n@dev This is an example of a fully fledged crowdsale.\nThe way to add new features to a base crowdsale is by multiple inheritance.\nIn this example we are providing following extensions:\nCappedCrowdsale - sets a max boundary for raised funds\nRefundableCrowdsale - set a min goal to be reached and returns funds if it's not met\n * After adding multiple features it's good practice to run integration tests\nto ensure that subcontracts works together as intended.",
+        "fullyImplemented": true,
+        "id": 2303,
+        "linearizedBaseContracts": [
+          2303,
+          1743,
+          1490,
+          1312,
+          5020,
+          2138,
+          1904,
+          1264
+        ],
+        "name": "SampleCrowdsale",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 2301,
+              "nodeType": "Block",
+              "src": "1611:174:24",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "commonType": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        "id": 2298,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "argumentTypes": null,
+                          "id": 2296,
+                          "name": "_goal",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 2277,
+                          "src": "1766:5:24",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "<=",
+                        "rightExpression": {
+                          "argumentTypes": null,
+                          "id": 2297,
+                          "name": "_cap",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 2273,
+                          "src": "1775:4:24",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "src": "1766:13:24",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      ],
+                      "id": 2295,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        8369,
+                        8370
+                      ],
+                      "referencedDeclaration": 8369,
+                      "src": "1758:7:24",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
+                        "typeString": "function (bool) pure"
+                      }
+                    },
+                    "id": 2299,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1758:22:24",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 2300,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1758:22:24"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 2302,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [
+              {
+                "arguments": [
+                  {
+                    "argumentTypes": null,
+                    "id": 2280,
+                    "name": "_rate",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 2269,
+                    "src": "1481:5:24",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  {
+                    "argumentTypes": null,
+                    "id": 2281,
+                    "name": "_wallet",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 2271,
+                    "src": "1488:7:24",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  {
+                    "argumentTypes": null,
+                    "id": 2282,
+                    "name": "_token",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 2275,
+                    "src": "1497:6:24",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_MintableToken_$6126",
+                      "typeString": "contract MintableToken"
+                    }
+                  }
+                ],
+                "id": 2283,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 2279,
+                  "name": "Crowdsale",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 1264,
+                  "src": "1471:9:24",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_type$_t_contract$_Crowdsale_$1264_$",
+                    "typeString": "type(contract Crowdsale)"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "1471:33:24"
+              },
+              {
+                "arguments": [
+                  {
+                    "argumentTypes": null,
+                    "id": 2285,
+                    "name": "_cap",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 2273,
+                    "src": "1525:4:24",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  }
+                ],
+                "id": 2286,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 2284,
+                  "name": "CappedCrowdsale",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 1904,
+                  "src": "1509:15:24",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_type$_t_contract$_CappedCrowdsale_$1904_$",
+                    "typeString": "type(contract CappedCrowdsale)"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "1509:21:24"
+              },
+              {
+                "arguments": [
+                  {
+                    "argumentTypes": null,
+                    "id": 2288,
+                    "name": "_openingTime",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 2265,
+                    "src": "1550:12:24",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  {
+                    "argumentTypes": null,
+                    "id": 2289,
+                    "name": "_closingTime",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 2267,
+                    "src": "1564:12:24",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  }
+                ],
+                "id": 2290,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 2287,
+                  "name": "TimedCrowdsale",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 2138,
+                  "src": "1535:14:24",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_type$_t_contract$_TimedCrowdsale_$2138_$",
+                    "typeString": "type(contract TimedCrowdsale)"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "1535:42:24"
+              },
+              {
+                "arguments": [
+                  {
+                    "argumentTypes": null,
+                    "id": 2292,
+                    "name": "_goal",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 2277,
+                    "src": "1602:5:24",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  }
+                ],
+                "id": 2293,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 2291,
+                  "name": "RefundableCrowdsale",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 1490,
+                  "src": "1582:19:24",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_type$_t_contract$_RefundableCrowdsale_$1490_$",
+                    "typeString": "type(contract RefundableCrowdsale)"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "1582:26:24"
+              }
+            ],
+            "name": "SampleCrowdsale",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 2278,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2265,
+                  "name": "_openingTime",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2302,
+                  "src": "1302:20:24",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2264,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1302:7:24",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2267,
+                  "name": "_closingTime",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2302,
+                  "src": "1328:20:24",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2266,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1328:7:24",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2269,
+                  "name": "_rate",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2302,
+                  "src": "1354:13:24",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2268,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1354:7:24",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2271,
+                  "name": "_wallet",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2302,
+                  "src": "1373:15:24",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 2270,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1373:7:24",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2273,
+                  "name": "_cap",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2302,
+                  "src": "1394:12:24",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2272,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1394:7:24",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2275,
+                  "name": "_token",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2302,
+                  "src": "1412:20:24",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_MintableToken_$6126",
+                    "typeString": "contract MintableToken"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 2274,
+                    "name": "MintableToken",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 6126,
+                    "src": "1412:13:24",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_MintableToken_$6126",
+                      "typeString": "contract MintableToken"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2277,
+                  "name": "_goal",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2302,
+                  "src": "1438:13:24",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2276,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1438:7:24",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1296:159:24"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 2294,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1611:0:24"
+            },
+            "scope": 2303,
+            "src": "1272:513:24",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 2304,
+        "src": "1185:602:24"
+      }
+    ],
+    "src": "0:1788:24"
+  },
+  "legacyAST": {
+    "absolutePath": "/home/scientistnik/fastspace/karma/inheritance/contracts/zeppelin/contracts/examples/SampleCrowdsale.sol",
+    "exportedSymbols": {
+      "SampleCrowdsale": [
+        2303
+      ],
+      "SampleCrowdsaleToken": [
+        2257
+      ]
+    },
+    "id": 2304,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 2241,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".21"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:24"
+      },
+      {
+        "absolutePath": "/home/scientistnik/fastspace/karma/inheritance/contracts/zeppelin/contracts/crowdsale/validation/CappedCrowdsale.sol",
+        "file": "../crowdsale/validation/CappedCrowdsale.sol",
+        "id": 2242,
+        "nodeType": "ImportDirective",
+        "scope": 2304,
+        "sourceUnit": 1905,
+        "src": "26:53:24",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/home/scientistnik/fastspace/karma/inheritance/contracts/zeppelin/contracts/crowdsale/distribution/RefundableCrowdsale.sol",
+        "file": "../crowdsale/distribution/RefundableCrowdsale.sol",
+        "id": 2243,
+        "nodeType": "ImportDirective",
+        "scope": 2304,
+        "sourceUnit": 1491,
+        "src": "80:59:24",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/home/scientistnik/fastspace/karma/inheritance/contracts/zeppelin/contracts/crowdsale/emission/MintedCrowdsale.sol",
+        "file": "../crowdsale/emission/MintedCrowdsale.sol",
+        "id": 2244,
+        "nodeType": "ImportDirective",
+        "scope": 2304,
+        "sourceUnit": 1744,
+        "src": "140:51:24",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/home/scientistnik/fastspace/karma/inheritance/contracts/zeppelin/contracts/token/ERC20/MintableToken.sol",
+        "file": "../token/ERC20/MintableToken.sol",
+        "id": 2245,
+        "nodeType": "ImportDirective",
+        "scope": 2304,
+        "sourceUnit": 6127,
+        "src": "192:42:24",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 2246,
+              "name": "MintableToken",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 6126,
+              "src": "412:13:24",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_MintableToken_$6126",
+                "typeString": "contract MintableToken"
+              }
+            },
+            "id": 2247,
+            "nodeType": "InheritanceSpecifier",
+            "src": "412:13:24"
+          }
+        ],
+        "contractDependencies": [
+          5020,
+          5798,
+          5999,
+          6031,
+          6126,
+          6586
+        ],
+        "contractKind": "contract",
+        "documentation": "@title SampleCrowdsaleToken\n@dev Very simple ERC20 Token that can be minted.\nIt is meant to be used in a crowdsale contract.",
+        "fullyImplemented": true,
+        "id": 2257,
+        "linearizedBaseContracts": [
+          2257,
+          6126,
+          5020,
+          6586,
+          5798,
+          5999,
+          6031
+        ],
+        "name": "SampleCrowdsaleToken",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": true,
+            "id": 2250,
+            "name": "name",
+            "nodeType": "VariableDeclaration",
+            "scope": 2257,
+            "src": "431:54:24",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_memory",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 2248,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "431:6:24",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "53616d706c652043726f776473616c6520546f6b656e",
+              "id": 2249,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "string",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "461:24:24",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_stringliteral_57a85b1937a20a5d495de875a4a7af46ff581ccf3f336ab6c1a136ea0b8088ca",
+                "typeString": "literal_string \"Sample Crowdsale Token\""
+              },
+              "value": "Sample Crowdsale Token"
+            },
+            "visibility": "public"
+          },
+          {
+            "constant": true,
+            "id": 2253,
+            "name": "symbol",
+            "nodeType": "VariableDeclaration",
+            "scope": 2257,
+            "src": "522:37:24",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_memory",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 2251,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "522:6:24",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "534354",
+              "id": 2252,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "string",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "554:5:24",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_stringliteral_b2b1dc3929a2664c613672dce30cd0d6fe6b6e782ad9ee21092964c70aaaffa9",
+                "typeString": "literal_string \"SCT\""
+              },
+              "value": "SCT"
+            },
+            "visibility": "public"
+          },
+          {
+            "constant": true,
+            "id": 2256,
+            "name": "decimals",
+            "nodeType": "VariableDeclaration",
+            "scope": 2257,
+            "src": "596:35:24",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint8",
+              "typeString": "uint8"
+            },
+            "typeName": {
+              "id": 2254,
+              "name": "uint8",
+              "nodeType": "ElementaryTypeName",
+              "src": "596:5:24",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint8",
+                "typeString": "uint8"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "3138",
+              "id": 2255,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "629:2:24",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_18_by_1",
+                "typeString": "int_const 18"
+              },
+              "value": "18"
+            },
+            "visibility": "public"
+          }
+        ],
+        "scope": 2304,
+        "src": "379:289:24"
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 2258,
+              "name": "CappedCrowdsale",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 1904,
+              "src": "1213:15:24",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_CappedCrowdsale_$1904",
+                "typeString": "contract CappedCrowdsale"
+              }
+            },
+            "id": 2259,
+            "nodeType": "InheritanceSpecifier",
+            "src": "1213:15:24"
+          },
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 2260,
+              "name": "RefundableCrowdsale",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 1490,
+              "src": "1230:19:24",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_RefundableCrowdsale_$1490",
+                "typeString": "contract RefundableCrowdsale"
+              }
+            },
+            "id": 2261,
+            "nodeType": "InheritanceSpecifier",
+            "src": "1230:19:24"
+          },
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 2262,
+              "name": "MintedCrowdsale",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 1743,
+              "src": "1251:15:24",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_MintedCrowdsale_$1743",
+                "typeString": "contract MintedCrowdsale"
+              }
+            },
+            "id": 2263,
+            "nodeType": "InheritanceSpecifier",
+            "src": "1251:15:24"
+          }
+        ],
+        "contractDependencies": [
+          1264,
+          1312,
+          1490,
+          1743,
+          1904,
+          2138,
+          5020
+        ],
+        "contractKind": "contract",
+        "documentation": "@title SampleCrowdsale\n@dev This is an example of a fully fledged crowdsale.\nThe way to add new features to a base crowdsale is by multiple inheritance.\nIn this example we are providing following extensions:\nCappedCrowdsale - sets a max boundary for raised funds\nRefundableCrowdsale - set a min goal to be reached and returns funds if it's not met\n * After adding multiple features it's good practice to run integration tests\nto ensure that subcontracts works together as intended.",
+        "fullyImplemented": true,
+        "id": 2303,
+        "linearizedBaseContracts": [
+          2303,
+          1743,
+          1490,
+          1312,
+          5020,
+          2138,
+          1904,
+          1264
+        ],
+        "name": "SampleCrowdsale",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 2301,
+              "nodeType": "Block",
+              "src": "1611:174:24",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "commonType": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        "id": 2298,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "argumentTypes": null,
+                          "id": 2296,
+                          "name": "_goal",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 2277,
+                          "src": "1766:5:24",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "<=",
+                        "rightExpression": {
+                          "argumentTypes": null,
+                          "id": 2297,
+                          "name": "_cap",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 2273,
+                          "src": "1775:4:24",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "src": "1766:13:24",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      ],
+                      "id": 2295,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        8369,
+                        8370
+                      ],
+                      "referencedDeclaration": 8369,
+                      "src": "1758:7:24",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
+                        "typeString": "function (bool) pure"
+                      }
+                    },
+                    "id": 2299,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1758:22:24",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 2300,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1758:22:24"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 2302,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [
+              {
+                "arguments": [
+                  {
+                    "argumentTypes": null,
+                    "id": 2280,
+                    "name": "_rate",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 2269,
+                    "src": "1481:5:24",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  {
+                    "argumentTypes": null,
+                    "id": 2281,
+                    "name": "_wallet",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 2271,
+                    "src": "1488:7:24",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  {
+                    "argumentTypes": null,
+                    "id": 2282,
+                    "name": "_token",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 2275,
+                    "src": "1497:6:24",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_MintableToken_$6126",
+                      "typeString": "contract MintableToken"
+                    }
+                  }
+                ],
+                "id": 2283,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 2279,
+                  "name": "Crowdsale",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 1264,
+                  "src": "1471:9:24",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_type$_t_contract$_Crowdsale_$1264_$",
+                    "typeString": "type(contract Crowdsale)"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "1471:33:24"
+              },
+              {
+                "arguments": [
+                  {
+                    "argumentTypes": null,
+                    "id": 2285,
+                    "name": "_cap",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 2273,
+                    "src": "1525:4:24",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  }
+                ],
+                "id": 2286,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 2284,
+                  "name": "CappedCrowdsale",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 1904,
+                  "src": "1509:15:24",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_type$_t_contract$_CappedCrowdsale_$1904_$",
+                    "typeString": "type(contract CappedCrowdsale)"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "1509:21:24"
+              },
+              {
+                "arguments": [
+                  {
+                    "argumentTypes": null,
+                    "id": 2288,
+                    "name": "_openingTime",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 2265,
+                    "src": "1550:12:24",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  {
+                    "argumentTypes": null,
+                    "id": 2289,
+                    "name": "_closingTime",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 2267,
+                    "src": "1564:12:24",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  }
+                ],
+                "id": 2290,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 2287,
+                  "name": "TimedCrowdsale",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 2138,
+                  "src": "1535:14:24",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_type$_t_contract$_TimedCrowdsale_$2138_$",
+                    "typeString": "type(contract TimedCrowdsale)"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "1535:42:24"
+              },
+              {
+                "arguments": [
+                  {
+                    "argumentTypes": null,
+                    "id": 2292,
+                    "name": "_goal",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 2277,
+                    "src": "1602:5:24",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  }
+                ],
+                "id": 2293,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 2291,
+                  "name": "RefundableCrowdsale",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 1490,
+                  "src": "1582:19:24",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_type$_t_contract$_RefundableCrowdsale_$1490_$",
+                    "typeString": "type(contract RefundableCrowdsale)"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "1582:26:24"
+              }
+            ],
+            "name": "SampleCrowdsale",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 2278,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2265,
+                  "name": "_openingTime",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2302,
+                  "src": "1302:20:24",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2264,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1302:7:24",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2267,
+                  "name": "_closingTime",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2302,
+                  "src": "1328:20:24",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2266,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1328:7:24",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2269,
+                  "name": "_rate",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2302,
+                  "src": "1354:13:24",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2268,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1354:7:24",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2271,
+                  "name": "_wallet",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2302,
+                  "src": "1373:15:24",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 2270,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1373:7:24",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2273,
+                  "name": "_cap",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2302,
+                  "src": "1394:12:24",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2272,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1394:7:24",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2275,
+                  "name": "_token",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2302,
+                  "src": "1412:20:24",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_MintableToken_$6126",
+                    "typeString": "contract MintableToken"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 2274,
+                    "name": "MintableToken",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 6126,
+                    "src": "1412:13:24",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_MintableToken_$6126",
+                      "typeString": "contract MintableToken"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2277,
+                  "name": "_goal",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2302,
+                  "src": "1438:13:24",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2276,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1438:7:24",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1296:159:24"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 2294,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1611:0:24"
+            },
+            "scope": 2303,
+            "src": "1272:513:24",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 2304,
+        "src": "1185:602:24"
+      }
+    ],
+    "src": "0:1788:24"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.23+commit.124ca40d.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "2.0.0",
+  "updatedAt": "2018-05-12T19:26:33.512Z"
+}
