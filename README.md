@@ -1,5 +1,5 @@
 # inheritance
-Two part of hackaton Karma.
+Two part of Karma-hackaton.
 
 ## How to use
 
@@ -7,6 +7,7 @@ Two part of hackaton Karma.
 $ git clone git@github.com:scientistnik/inheritance.git
 $ cd inheritance
 $ npm install
+$ npm run serve
 ```
 
 Open `http://localhost:8080/` in browser.
